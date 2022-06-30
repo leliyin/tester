@@ -37,7 +37,7 @@ spec:
                 - --tries=1
                 - --timeout=4
                 - --spider
-                - http://localhost:8080/greet
+                - http://localhost:8080/healthz
             timeoutSeconds: 5
           readinessProbe:
             exec:
@@ -47,7 +47,7 @@ spec:
                 - --tries=1
                 - --timeout=4
                 - --spider
-                - http://localhost:8080/greet
+                - http://localhost:8080/healthz
             timeoutSeconds: 5
           resources:
             limits:
@@ -59,3 +59,4 @@ spec:
           securityContext:
             readOnlyRootFilesystem: true
             runAsUser: 10001
+

@@ -1,4 +1,4 @@
-namespace: test
+namespace: hello-helidon
 resources:
   - service.yaml
   - deployment.yaml
